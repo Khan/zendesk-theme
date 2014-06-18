@@ -45,6 +45,10 @@ $(document).ready(function() {
     $userIdInput.val(decodeURIComponent(match[1]));
   }
 
+  // nav bar text
+  $(".header .submit-a-request").text("Report a problem");
+  $(".header .login").text("Log in");
+
   // search box placeholder text
   $("#query").attr("placeholder", "creating an account, understanding mastery challenges");
 

@@ -371,6 +371,20 @@ main, .header-inner {
   padding: 0 15px;
 }
 
+.nav-link a:hover,
+.nav-link a:active {
+  text-decoration: none;
+}
+
+.nav-link a.login {
+  /* Override [role=button] styles */
+  border: 0;
+  box-shadow: none;
+  font: inherit;
+  height: auto;
+  line-height: inherit;
+}
+
 .nav-link img {
   position: relative;
   top: -2px;
