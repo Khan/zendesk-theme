@@ -331,39 +331,50 @@ h1 {
    Content frame
    ==================================================== */
 main, .header-inner {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 20px;
-  width: 940px;
+  padding: 0 15px;
+  width: 1000px;
 }
 
 /* ====================================================
    Header
    ==================================================== */
 .header {
-  background-color: $color_5;
-  border-color: rgba(0, 0, 0, 0.07);
-  border-style: solid;
-  border-width: 0 0 1px;
-  height: 121px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 45px;
+  position: relative;
 }
 
-.logo {
+.header-inner {
+  padding: 0;
+}
+
+.nav-link {
+  border-right: 1px solid #ddd;
   float: left;
+  line-height: 43px;
+  padding: 2px 15px 0;
 }
 
-.logo a {
-  display: inline-block;
-  line-height: 120px;
+.nav-link:first-child {
+  border-left: 1px solid #ddd;
 }
 
-.logo img {
-  vertical-align: middle;
-  max-height: 60px;
+.nav-link a:link,
+.nav-link a:visited {
+  color: #444;
 }
 
-.user-nav {
+.nav-link img {
+  position: relative;
+  top: -2px;
+}
+
+.right-nav {
   float: right;
-  margin-top: 40px;
 }
 
 /* ====================================================
@@ -404,17 +415,6 @@ main, .header-inner {
 .user-avatar, .user-avatar + span {
   display: inline-block;
   vertical-align: middle;
-}
-
-.submit-a-request {
-  border-left: 1px solid #ECECEC;
-  border-left: 1px solid rgba(0, 0, 0, 0.07);
-  margin-left: 15px;
-  padding-left: 15px;
-}
-
-.login, .user-info {
-  margin-left: 20px;
 }
 
 /* ====================================================
