@@ -366,6 +366,9 @@ main, .header-inner {
 .nav-link a:link,
 .nav-link a:visited {
   color: #444;
+  display: block;
+  margin: 0 -15px;
+  padding: 0 15px;
 }
 
 .nav-link img {
