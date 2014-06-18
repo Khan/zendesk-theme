@@ -373,6 +373,7 @@ main, .header-inner {
 
 .nav-link a:hover,
 .nav-link a:active {
+  color: #96ab4f;
   text-decoration: none;
 }
 
@@ -484,7 +485,7 @@ main, .header-inner {
   background: #fff;
   font-size: inherit;
   padding: 20px 52px 20px 15px;
-  width: 680px;
+  width: 720px;
 }
 
 .search-box .search input[type=submit] {
@@ -2216,4 +2217,35 @@ body.community-enabled .search-results-column ~ .search-results-column {
   margin-bottom: 10px;
   height: 2px;
   background-color: #ECECEC;
+}
+
+/* ====================================================
+   Home page styles
+   ==================================================== */
+.home-page-categories {
+  margin: 0 auto;
+  width: 760px;
+}
+
+.home-page-categories .categories-left,
+.home-page-categories .categories-right {
+  float: left;
+  margin: 0 20px;
+  width: 340px;
+}
+
+.home-page-categories h2 {
+  color: #999;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.home-page-categories a {
+  background-repeat: no-repeat;
+  color: #444;
+  display: block;
+  font-size: 21px;
+  height: 55px;
+  margin: 15px 0;
+  padding: 15px 0 0 65px;
 }
