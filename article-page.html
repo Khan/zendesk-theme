@@ -1,0 +1,37 @@
+<div class="search-box">
+  {{search}}
+</div>
+
+<nav class="sub-nav clearfix">
+  {{breadcrumbs}}
+  {{subscribe}}
+</nav>
+
+<div class="article-column">
+  <article>
+    <h1>{{visibility}} {{title}}</h1>
+    <div class="article-body">
+      {{body}}
+    </div>
+    <div class="article-attachments">
+      {{attachments}}
+    </div>
+    <div class="article-meta">
+      {{author_name}} - {{updated_at}}
+    </div>
+    <footer class="article-footer clearfix">
+      {{vote}}
+      {{share}}
+    </footer>
+  </article>
+  <div class="article-more-questions">
+    {{more_questions}}
+  </div>
+  <section class="article-comments">
+    <h2>{{comment_heading}}</h2>
+    {{comment_list}}
+    {{pending_comment_list}}
+    {{comment_pagination}}
+    {{comment_form}}
+  </section>
+</div>
