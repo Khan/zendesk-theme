@@ -359,8 +359,8 @@ main, .header-inner {
   padding: 2px 15px 0;
 }
 
-.nav-link:first-child {
-  border-left: 1px solid #ddd;
+.nav-link:empty {
+  display: none;
 }
 
 .nav-link a:link,
@@ -371,6 +371,15 @@ main, .header-inner {
 .nav-link img {
   position: relative;
   top: -2px;
+}
+
+.left-nav,
+.right-nav {
+  border-left: 1px solid #ddd;
+}
+
+.left-nav {
+  float: left;
 }
 
 .right-nav {
@@ -450,7 +459,7 @@ main, .header-inner {
   background: #fff;
   font-size: 20px;
   padding: 20px 100px 20px 20px;
-  width: 700px;
+  width: 770px;
 }
 
 .search-box .search input[type=submit] {
