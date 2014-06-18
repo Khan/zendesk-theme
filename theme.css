@@ -19,6 +19,11 @@
   font-size: 18px;
 }
 
+/* Hide user_id field from "new request" form */
+.request_custom_fields_22555874 {
+  display: none;
+}
+
 /* ====================================================
    Base styles
    ==================================================== */

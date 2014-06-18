@@ -37,4 +37,12 @@ $(document).ready(function() {
     $(".comment-form-controls").show();
   });
 
+  // copy ?userId=... from URL to hidden form field
+  var userIdRegex = /(?:^\?|&)userId=([^&]+)/;
+  var $userIdInput = $("#request_custom_fields_22555874");
+  var match = userIdRegex.exec(window.location.search);
+  if ($userIdInput.length && match) {
+    $userIdInput.val(decodeURIComponent(match[1]));
+  }
+
 });
