@@ -45,4 +45,7 @@ $(document).ready(function() {
     $userIdInput.val(decodeURIComponent(match[1]));
   }
 
+  // search box placeholder text
+  $("#query").attr("placeholder", "creating an account, understanding mastery challenges");
+
 });

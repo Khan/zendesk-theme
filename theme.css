@@ -437,14 +437,23 @@ main, .header-inner {
   background-position: center bottom;
   background-repeat: none;
   background-size: cover;
+  /* Box shadow extends background visually outside the container */
   box-shadow: -900px 0 $color_1, 900px 0 $color_1;
+  font-size: 21px;
   margin-bottom: 35px;
-  padding: 50px 0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.search-box .pre-search {
+  color: #fff;
+  display: inline-block;
+  vertical-align: -1px;
 }
 
 .search-box .search {
-  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  display: inline-block;
+  margin-left: 10px;
   position: relative;
 }
 
@@ -458,61 +467,25 @@ main, .header-inner {
 
 .search-box .search input[type=search],
 .search-box .search input[type=text] {
-  border-radius: 8px 0 0 8px;
   background: #fff;
-  font-size: 20px;
-  padding: 20px 100px 20px 20px;
-  width: 770px;
+  font-size: inherit;
+  padding: 20px 52px 20px 15px;
+  width: 680px;
 }
 
 .search-box .search input[type=submit] {
-  background-color: $color_2;
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
-  border-radius: 0 8px 8px 0;
+  background: url(//p2.zdassets.com/hc/theme_assets/526991/200061184/magnifying-glass.png) 50% 50% no-repeat;
   border: 0;
-  bottom: 0;
   box-shadow: none;
-  color: #fff;
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-shadow: 0 2px rgba(0, 0, 0, 0.2);
-  min-width: 200px;
-  padding: 0 20px;
+  color: transparent;
+  cursor: pointer;
+  font-size: 1px;
+  height: 32px;
+  overflow: hidden;
   position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.sub-nav .search {
-  float: right;
-  position: relative;
-}
-
-.sub-nav .search:before {
-  content: "\1F50D";
-  font-family: "entypo";
-  font-size: 16px;
-  line-height: 0;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 35px;
-  z-index: 1;
-}
-
-.sub-nav .search input[type=search],
-.sub-nav .search input[type=text] {
-  padding: 6px 10px 6px 35px;
-  height: 30px;
-  width: 250px;
-}
-
-.sub-nav .search input[type=submit] {
-  display: none;
+  right: 12px;
+  top: 14px;
+  width: 32px;
 }
 
 /* ====================================================
