@@ -443,6 +443,7 @@ main, .header-inner {
    Search
    ==================================================== */
 .search-box {
+  background-color: $color_1;
   background-image: url(//p2.zdassets.com/hc/theme_assets/526991/200061184/leaf-bg.png);
   background-position: center bottom;
   background-repeat: none;
@@ -747,7 +748,7 @@ main, .header-inner {
   content: "";
   display: block;
   height: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .sub-nav:after {
@@ -758,7 +759,7 @@ main, .header-inner {
   content: "";
   display: block;
   height: 1px;
-  margin-top: 7px;
+  margin-top: 6px;
 }
 
 .sub-nav .breadcrumbs {
@@ -1522,6 +1523,7 @@ main, .header-inner {
    ==================================================== */
 body.community-enabled .search-results-column {
   float: left;
+  margin-left: 15px;
   width: 430px;
 }
 
