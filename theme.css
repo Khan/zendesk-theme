@@ -51,7 +51,7 @@ body {
  * Links
  */
 a {
-  color: $color_4;
+  color: #96ab4f;
   text-decoration: none;
   font-family: inherit;
 }
@@ -225,7 +225,8 @@ h1 {
   color: #333;
   font-size: 32px;
   font-weight: bold;
-  margin: 0.8em 0;
+  margin: 20px 0;
+  padding: 0 15px;
 }
 
 /* ====================================================
@@ -334,7 +335,6 @@ main, .header-inner {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 15px;
   width: 1000px;
 }
 
@@ -346,10 +346,6 @@ main, .header-inner {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   height: 45px;
   position: relative;
-}
-
-.header-inner {
-  padding: 0;
 }
 
 .nav-link {
@@ -453,9 +449,9 @@ main, .header-inner {
   background-repeat: none;
   background-size: cover;
   /* Box shadow extends background visually outside the container */
+  -webkit-box-shadow: -900px 0 $color_1, 900px 0 $color_1;
   box-shadow: -900px 0 $color_1, 900px 0 $color_1;
   font-size: 21px;
-  margin-bottom: 35px;
   padding: 40px 0;
   text-align: center;
 }
@@ -568,14 +564,15 @@ main, .header-inner {
   display: block;
 }
 
-.category-tree .article-list li {
-  margin-bottom: 5px;
-}
-
 .category-description, .section-description {
   color: #BBB;
   margin-bottom: 30px;
   margin-top: 0px;
+}
+
+.section-tree,
+.section-page {
+  padding: 0 15px;
 }
 
 .section-tree .section {
@@ -586,16 +583,14 @@ main, .header-inner {
 }
 
 .section-tree .section h3 {
-  font-weight: bold;
-  margin-bottom: 20px;
+  color: #999;
+  font-size: 21px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
 }
 
 .section-tree .section h3 a {
   color: inherit;
-}
-
-.section-tree .article-list li {
-  margin-bottom: 5px;
 }
 
 .section-subscribe, .section-unsubscribe,
@@ -615,14 +610,15 @@ main, .header-inner {
 }
 
 .article-list li {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
+}
+
+.article-list li a {
+  color: #444;
 }
 
 .see-all-articles {
-  background: #f2f2f2;
-  border-radius: 5px;
-  font-size: 12px;
-  padding: 3px 10px;
+  font-weight: bold;
 }
 
 .category-tree .see-all-articles {
@@ -736,42 +732,68 @@ main, .header-inner {
    Sub nav
    ==================================================== */
 .sub-nav {
-  border-bottom: 1px solid #ECECEC;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  font-size: 13px;
-  padding: 15px 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding: 10px 15px 7px;
 }
 
 .sub-nav .breadcrumbs {
   float: left;
-  margin-top: 7px;
 }
 
 /* ====================================================
    Breadcrumbs
    ==================================================== */
 .breadcrumbs li {
-  display: inline-block;
+  float: left;
+  font-weight: bold;
+  margin-right: 10px;
   white-space: nowrap;
 }
 
+.breadcrumbs li a {
+  /* Make only the last (selected) breadcrumb bold */
+  font-weight: normal;
+}
+
 .breadcrumbs li + li:before {
-  color: #158EC2;
+  font-weight: normal;
+  margin-right: 5px;
   content: ">";
 }
 
 /* ====================================================
    Article
    ==================================================== */
+.article-body,
+.article-meta,
+.article-footer,
+.article-comments {
+  padding: 0 15px;
+}
+
+.article-meta,
+.article-footer,
+.article-comments {
+  display: none;
+}
+
 .article-column {
   width: 700px;
+}
+
+.article-column h1 {
+  font-size: 24px;
+  font-weight: normal;
 }
 
 /*
  * Body
  */
 .article-body {
-  line-height: 2;
+  line-height: 1.6;
   font-size: 14px;
   word-wrap: break-word;
 }
@@ -841,7 +863,7 @@ main, .header-inner {
   border-style: solid;
   border-width: 0 0 1px 0;
   margin: 30px 0;
-  padding: 20px 0;
+  padding: 20px 15px;
 }
 
 .article-footer .article-vote {
@@ -2223,7 +2245,7 @@ body.community-enabled .search-results-column ~ .search-results-column {
    Home page styles
    ==================================================== */
 .home-page-categories {
-  margin: 0 auto;
+  margin: 40px auto 0;
   width: 760px;
 }
 
