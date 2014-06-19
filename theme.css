@@ -732,14 +732,37 @@ main, .header-inner {
    ==================================================== */
 .sub-nav {
   background: #f7f7f7;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
+  /* Box shadow extends background visually outside the container */
+  -webkit-box-shadow: -900px 0 #f7f7f7, 900px 0 #f7f7f7;
+  box-shadow: -900px 0 #f7f7f7, 900px 0 #f7f7f7;
   margin-bottom: 30px;
-  padding: 10px 15px 7px;
+  padding: 0 15px;
+}
+
+.sub-nav:before {
+  background: #ccc;
+  /* Box shadow extends background visually outside the container */
+  -webkit-box-shadow: -900px 0 #ccc, 900px 0 #ccc;
+  box-shadow: -900px 0 #ccc, 900px 0 #ccc;
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 10px;
+}
+
+.sub-nav:after {
+  background: #ccc;
+  /* Box shadow extends background visually outside the container */
+  -webkit-box-shadow: -900px 0 #ccc, 900px 0 #ccc;
+  box-shadow: -900px 0 #ccc, 900px 0 #ccc;
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 7px;
 }
 
 .sub-nav .breadcrumbs {
-  float: left;
+  height: 21px;
 }
 
 /* ====================================================
