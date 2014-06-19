@@ -52,4 +52,17 @@ $(document).ready(function() {
   // search box placeholder text
   $("#query").attr("placeholder", "creating an account, understanding mastery challenges");
 
+  // add tags to h1 based on breadcrumbs, using paths that look like categories
+  var categoryIdRegex = /^\/hc\/en-us\/categories\/(\d+)/;
+  var match = categoryIdRegex.exec(window.location.pathname);
+  $(".breadcrumbs a").each(function() {
+    if (match) {
+      return false;
+    }
+    match = categoryIdRegex.exec(this.pathname);
+  });
+  if (match) {
+    $("h1").addClass("category-" + match[1]);
+  }
+
 });

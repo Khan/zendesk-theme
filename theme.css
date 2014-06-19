@@ -1641,12 +1641,13 @@ body.community-enabled .search-results-column ~ .search-results-column {
 }
 
 .form footer {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .form footer input[type=submit] {
   background: #a8bb6a;
   border: 0;
+  border-radius: 15px;
   box-shadow: none;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2257,4 +2258,48 @@ body.community-enabled .search-results-column ~ .search-results-column {
   height: 55px;
   margin: 15px 0;
   padding: 15px 0 0 65px;
+}
+
+/* ====================================================
+   Category header icons
+   ==================================================== */
+h1.category-200175790,
+h1.category-200175820,
+h1.category-200175830,
+h1.category-200175840,
+h1.category-200175860,
+h1.category-200175850,
+h1.new-request {
+  background-position: 15px 0;
+  background-repeat: no-repeat;
+  height: 70px;
+  padding: 15px 15px 0 90px;
+}
+
+h1.category-200175790 {
+  background-image: url(//p2.zdassets.com/hc/theme_assets/526991/200061184/hopper-70.png);
+}
+
+h1.category-200175820 {
+  background-image: url(//p2.zdassets.com/hc/theme_assets/526991/200061184/pants-70.png);
+}
+
+h1.category-200175830 {
+  background-image: url(//p2.zdassets.com/hc/theme_assets/526991/200061184/sam-70.png);
+}
+
+h1.category-200175840 {
+  background-image: url(//p2.zdassets.com/hc/theme_assets/526991/200061184/leafers-70.png);
+}
+
+h1.category-200175860 {
+  background-image: url(//p2.zdassets.com/hc/theme_assets/526991/200061184/faq-70.png);
+}
+
+h1.category-200175850 {
+  background-image: url(//p2.zdassets.com/hc/theme_assets/526991/200061184/accounts-70.png);
+}
+
+h1.new-request {
+  background-image: url(//p2.zdassets.com/hc/theme_assets/526991/200061184/problem-70.png);
 }
