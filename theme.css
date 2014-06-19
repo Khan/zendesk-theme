@@ -100,7 +100,6 @@ h1, h2, h3, h4, h5, h6 {
  */
 label {
   display: inline-block;
-  font-size: 12px;
   vertical-align: middle;
 }
 
@@ -1587,13 +1586,7 @@ body.community-enabled .search-results-column ~ .search-results-column {
    Forms
    ==================================================== */
 .form {
-  background: #f6f6f6;
-  background: rgba(0, 0, 0, 0.02);
-  border: 1px solid #ECECEC;
-  border: 1px solid rgba(0, 0, 0, 0.07);
-  border-radius: 3px;
-  overflow: hidden;
-  padding: 40px 55px;
+  padding: 0 15px;
 }
 
 .form-field + .form-field {
@@ -1601,19 +1594,13 @@ body.community-enabled .search-results-column ~ .search-results-column {
 }
 
 .form-field label {
+  color: #666;
   display: block;
-  font-weight: bold;
   margin-bottom: 5px;
 }
 
 .form-field input[type=checkbox] + label {
   margin: 0 0 0 10px;
-}
-
-.form-field.required > label:after {
-  content: "*";
-  color: red;
-  margin-left: 2px;
 }
 
 .form-field textarea, .form-field input {
@@ -1622,8 +1609,8 @@ body.community-enabled .search-results-column ~ .search-results-column {
 }
 
 .form-field p {
-  color: #BEBEBE;
-  font-size: 11px;
+  color: #666;
+  font-size: 12px;
 }
 
 .form-field input[type=number], .form-field input.datepicker {
@@ -1654,17 +1641,17 @@ body.community-enabled .search-results-column ~ .search-results-column {
 }
 
 .form footer {
-  border-top: 1px solid #ECECEC;
-  border-top: 1px solid rgba(0, 0, 0, 0.07);
-  margin-top: 40px;
-  padding-top: 25px;
-  text-align: right;
+  margin-top: 20px;
 }
 
-.form footer a {
-  color: #CCC;
-  cursor: pointer;
-  margin-right: 15px;
+.form footer input[type=submit] {
+  background: #a8bb6a;
+  border: 0;
+  box-shadow: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font: inherit;
+  width: 100%;
 }
 
 /* ====================================================
