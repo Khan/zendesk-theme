@@ -1714,7 +1714,8 @@ body.community-enabled .search-results-column ~ .search-results-column {
   float: left;
   font-size: 18px;
   font-weight: bold;
-  margin: 0;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 /*
@@ -1723,9 +1724,8 @@ body.community-enabled .search-results-column ~ .search-results-column {
 .community-nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
   border-top: 0;
-  margin-bottom: 55px;
-  margin-top: 0;
-  padding: 25px 0;
+  margin: 5px 0px 5px 0px;
+  padding: 10px 0;
 }
 
 .community-nav li {
@@ -1738,32 +1738,39 @@ body.community-enabled .search-results-column ~ .search-results-column {
   font-weight: normal;
 }
 
-.community-nav li + li {
+/*.community-nav li + li {
   border-left: 1px solid #ECECEC;
   border-left: 1px solid rgba(0, 0, 0, 0.07);
   padding-left: 30px;
-}
+}*/
 
 .community-nav li:last-child {
-  border: 0;
   float: right;
+  border-radius:25px;
   margin: 0;
   padding: 0;
   position: relative;
   top: -5px;
+  background-color: #a8bb6a;
+  color: #ffffff;
+
 }
+
+/*#query {
+  width:300px;
+}*/
 
 .community-nav li:last-child a {
-  color: #158EC2;
+  color: #ffffff;
 }
 
-.community-nav li:last-child a:before {
+/*.community-nav li:last-child a:before {
   content: "\270E";
   font-family: "entypo";
   font-size: 14px;
   margin-right: 10px;
   vertical-align: middle;
-}
+}*/
 
 /*
  * Sub nav
@@ -1833,7 +1840,7 @@ body.community-enabled .search-results-column ~ .search-results-column {
 }
 
 .topic-questions {
-  margin-top: 45px;
+  /*margin-top: 45px;*/
 }
 
 .topic-description {

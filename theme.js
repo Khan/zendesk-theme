@@ -3,7 +3,36 @@
  */
 
 $(document).ready(function() {
-
+  //community page design customizations
+  if ($('.community-heading').html() == "Community"){
+     $('.community-heading').css("color", "#ffffff");
+      $('body').css("background-color", "#f4f6f6");
+      $('body').css("-webkit-box-shadow", "-900px 0 #f4f6f6, 900px 0 #f4f6f6");
+      $('.sub-nav').css("background-color", "#314453");
+      $('.sub-nav').css('-webkit-box-shadow','-900px 0 #314453, 900px 0 #314453')
+      $('.sub-nav').css('margin-bottom','0');
+      $('.sub-nav').css('padding','40px 0px 40px 0px');
+      $('.sub-nav').removeClass('sub-nav');
+      $('.community-heading').html('Search discussions for');
+      $('.community-heading').css("font-family", "Proxima Nova, sans-serif");
+      $('#query').width(500);
+      $('#query').css("margin-top", "5px");
+      $('.community-heading').css("color", "#ffffff");
+      $("#query").attr("placeholder", "New ideas for the site");
+      $("input[value='Search']").css("visibility", "hidden");
+    /*
+      $('.community-heading').remove();
+      $('#query').remove();
+      $("input[value='Search']").remove();
+      */
+      $('body').css("background-color", "#f4f6f6");
+      $('body').css("-webkit-box-shadow", "-900px 0 #f4f6f6, 900px 0 #f4f6f6");
+      $(".topic-title a").css('color','black');
+      $(".question-title a").css('color','black');
+      $(".question-author a").css('color','#C5C5C5');
+      $(".community-sub-nav").prepend("<h2>Discussion Topics</h2>");
+  }
+  
   // toggle categories and sections on the home page
   $(".category-tree").on("click", "h2 a, h3 a", function() {
     $(this).parent().nextAll().toggle();
@@ -51,7 +80,7 @@ $(document).ready(function() {
 
   // search box placeholder text
   $("#query").attr("placeholder", "creating an account, understanding mastery challenges");
-
+  
   // add tags to h1 based on breadcrumbs, using paths that look like categories
   var categoryIdRegex = /^\/hc\/en-us\/categories\/(\d+)/;
   var match = categoryIdRegex.exec(window.location.pathname);
@@ -64,5 +93,5 @@ $(document).ready(function() {
   if (match) {
     $("h1").addClass("category-" + match[1]);
   }
-
+  
 });
