@@ -6,26 +6,14 @@ $(document).ready(function() {
   //community page design customizations
   if ($('.community-heading').html() == "Community"){
      $('.community-heading').css("color", "#ffffff");
-      $('body').css("background-color", "#f4f6f6");
-      $('body').css("-webkit-box-shadow", "-900px 0 #f4f6f6, 900px 0 #f4f6f6");
-      $('.sub-nav').css("background-color", "#314453");
-      $('.sub-nav').css('-webkit-box-shadow','-900px 0 #314453, 900px 0 #314453')
-      $('.sub-nav').css('margin-bottom','0');
-      $('.sub-nav').css('padding','40px 0px 40px 0px');
-      $('.sub-nav').removeClass('sub-nav');
+      /*$('body').css("background-color", "#f4f6f6");
+      $('body').css("-webkit-box-shadow", "-900px 0 #f4f6f6, 900px 0 #f4f6f6");*/
+      $('.sub-nav').removeClass('sub-nav').addClass('search-box');
       $('.community-heading').html('Search discussions for');
       $('.community-heading').css("font-family", "Proxima Nova, sans-serif");
-      $('#query').width(500);
-      $('#query').css("margin-top", "5px");
+      $('.community-heading').css("font-weight", "lighter");
       $('.community-heading').css("color", "#ffffff");
       $("#query").attr("placeholder", "New ideas for the site");
-      $("input[value='Search']").css("visibility", "hidden");
-    /*
-      $('.community-heading').remove();
-      $('#query').remove();
-      $("input[value='Search']").remove();
-      */
-      $('body').css("background-color", "#f4f6f6");
       $('body').css("-webkit-box-shadow", "-900px 0 #f4f6f6, 900px 0 #f4f6f6");
       $(".topic-title a").css('color','black');
       $(".question-title a").css('color','black');
@@ -95,3 +83,8 @@ $(document).ready(function() {
   }
   
 });
+
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5719.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
